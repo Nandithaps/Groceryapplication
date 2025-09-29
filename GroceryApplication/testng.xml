@@ -4,7 +4,7 @@
 <listeners>
 <listener class-name="reportGeneration.Listeners"></listener>
 </listeners>
-<parameter name="browsers" value="Firefox"></parameter>
+<parameter name="browsers" value="Chrome"></parameter>
   <test thread-count="5" name="Test">
     <classes>
       <class name="testScripts.LoginTest">
