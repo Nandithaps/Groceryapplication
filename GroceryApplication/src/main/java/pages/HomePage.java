@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.WaitUtility;
+
 public class HomePage 
 {
 public WebDriver driver;
@@ -12,7 +14,7 @@ public WebDriver driver;
 	public HomePage(WebDriver driver)
 	{
 		this.driver = driver;
-		PageFactory.initElements(driver, this); // init - to initialise elements
+		PageFactory.initElements(driver, this); 
 	}
 	
 	@FindBy(xpath = "//a[@data-toggle='dropdown']") private WebElement admin;
@@ -35,12 +37,16 @@ public WebDriver driver;
 	
 	public AdminUsersPage clickOnAdminUsersMoreInfoButton()
 	{
+		WaitUtility wait = new WaitUtility();
+		wait.waitUntilElementToBeClickable(driver, adminusers);
 		adminusers.click();
 		return new AdminUsersPage(driver);
 	}
 	
 	public ManageNewsPage clickOnManageNewsMoreInfoButton()
 	{
+		WaitUtility wait = new WaitUtility();
+		wait.waitUntilElementToBeClickable(driver, managenews);
 		managenews.click();
 		return new ManageNewsPage(driver);
 	}

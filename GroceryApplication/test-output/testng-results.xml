@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-24T23:26:52 IST" name="Grouping" finished-at="2025-09-24T23:26:56 IST" duration-ms="4129">
+  <suite started-at="2025-10-02T10:36:50 IST" name="Suite" finished-at="2025-10-02T10:36:54 IST" duration-ms="4847">
     <groups>
       <group name="smoke">
-        <method signature="AdminUsersTest.verifyUserIsAbleToSearchTheNewUser()[pri:0, instance:testScripts.AdminUsersTest@229f66ed]" name="verifyUserIsAbleToSearchTheNewUser" class="testScripts.AdminUsersTest"/>
+        <method signature="LoginTest.verifyUserLoginWithValidCredentials()[pri:1, instance:testScripts.LoginTest@36804139]" name="verifyUserLoginWithValidCredentials" class="testScripts.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-09-24T23:26:52 IST" name="Test" finished-at="2025-09-24T23:26:56 IST" duration-ms="4129">
-      <class name="testScripts.AdminUsersTest">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testScripts.AdminUsersTest@229f66ed]" started-at="2025-09-24T23:26:52 IST" name="initialiseBrowser" finished-at="2025-09-24T23:26:54 IST" duration-ms="1915" status="PASS">
+    <test started-at="2025-10-02T10:36:50 IST" name="Test" finished-at="2025-10-02T10:36:54 IST" duration-ms="4847">
+      <class name="testScripts.LoginTest">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@36804139]" started-at="2025-10-02T10:36:50 IST" name="initialiseBrowser" finished-at="2025-10-02T10:36:52 IST" duration-ms="2904" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,22 +21,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyUserIsAbleToSearchTheNewUser()[pri:0, instance:testScripts.AdminUsersTest@229f66ed]" started-at="2025-09-24T23:26:54 IST" name="verifyUserIsAbleToSearchTheNewUser" description="User is searching the list with an existing user details" finished-at="2025-09-24T23:26:56 IST" duration-ms="2172" status="PASS">
+        <test-method signature="verifyUserLoginWithValidCredentials()[pri:1, instance:testScripts.LoginTest@36804139]" started-at="2025-10-02T10:36:52 IST" name="verifyUserLoginWithValidCredentials" description="User login using valid username and valid password" finished-at="2025-10-02T10:36:54 IST" duration-ms="1874" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToSearchTheNewUser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.AdminUsersTest@229f66ed]" started-at="2025-09-24T23:26:56 IST" name="driverQuit" finished-at="2025-09-24T23:26:56 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyUserLoginWithValidCredentials -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@36804139]" started-at="2025-10-02T10:36:54 IST" name="driverQuit" finished-at="2025-10-02T10:36:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToSearchTheNewUser status=SUCCESS method=AdminUsersTest.verifyUserIsAbleToSearchTheNewUser()[pri:0, instance:testScripts.AdminUsersTest@229f66ed] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserLoginWithValidCredentials status=SUCCESS method=LoginTest.verifyUserLoginWithValidCredentials()[pri:1, instance:testScripts.LoginTest@36804139] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-      </class> <!-- testScripts.AdminUsersTest -->
+      </class> <!-- testScripts.LoginTest -->
     </test> <!-- Test -->
-  </suite> <!-- Grouping -->
+  </suite> <!-- Suite -->
 </testng-results>

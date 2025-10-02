@@ -18,7 +18,7 @@ public class ManageNewsTest extends Base
 	ManageNewsPage managenewspage;
 	
 	
-	@Test(description = "User is adding New news in Manage news page")
+	@Test(priority = 1,description = "User is adding New news in Manage news page")
 	public void verifyUserIsAbleToAddNewUser() throws IOException
 	{
 		String usernameValue = ExcelUtility.getStringData(0,0,"LoginPage");
@@ -36,7 +36,7 @@ public class ManageNewsTest extends Base
 		
 	}
 	
-	@Test(description = "User search for an existing news")
+	@Test(priority = 2,description = "User search for an existing news")
 	public void verifyUserIsAbleToSearchTheNewNews() throws IOException
 	{
 		String usernameValue = ExcelUtility.getStringData(0,0,"LoginPage");
@@ -54,7 +54,7 @@ public class ManageNewsTest extends Base
 		Assert.assertEquals(actual, expected, Constants.SEARCHMANAGENEWSERROR);
 	}
 	
-	@Test(description = "User clicks on Reset button in manage news page")
+	@Test(priority = 3,description = "User clicks on Reset button in manage news page")
 	public void verifyUserIsAbleToResetTheManualList() throws IOException
 	{
 		String usernameValue = ExcelUtility.getStringData(0,0,"LoginPage");

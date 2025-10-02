@@ -12,7 +12,7 @@ public WebDriver driver;
 	public ManageNewsPage(WebDriver driver)
 	{
 		this.driver = driver;
-		PageFactory.initElements(driver, this); // init - to initialise elements
+		PageFactory.initElements(driver, this); 
 	}
      
 
@@ -66,8 +66,7 @@ public WebDriver driver;
 	
 	public ManageNewsPage clickOnManageNewsResetButton()
 	{
-		resetmanagenews.click();
-		driver.navigate().refresh();	
+		resetmanagenews.click();	
 		return this;
 	}
 	

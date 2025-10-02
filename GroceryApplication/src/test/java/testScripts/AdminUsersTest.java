@@ -18,7 +18,7 @@ public class AdminUsersTest extends Base
 	HomePage homepage;
 	AdminUsersPage adminuserspage;
 	
-	@Test(description = "User is creating a new user in Admin User page")
+	@Test(priority = 1,description = "User is creating a new user in Admin User page")
 	public void verifyUserIsAbleToAddNewUser() throws IOException
 	{
 		String usernameValue = ExcelUtility.getStringData(0,0,"LoginPage");
@@ -40,7 +40,7 @@ public class AdminUsersTest extends Base
 	}
 
 
-	@Test(description = "User is searching the list with an existing user details")
+	@Test(priority = 2,description = "User is searching the list with an existing user details")
 	public void verifyUserIsAbleToSearchTheNewUser() throws IOException
 	{
 		String usernameValue = ExcelUtility.getStringData(0,0,"LoginPage");
@@ -58,7 +58,7 @@ public class AdminUsersTest extends Base
 		
 	}
 	
-	@Test(description = "User clicks on Reset button in Admin user page")
+	@Test(priority = 3,description = "User clicks on Reset button in Admin user page")
 	public void verifyUserIsAbleToResetTheUserList() throws IOException
 	{
 		String usernameValue = ExcelUtility.getStringData(0,0,"LoginPage");

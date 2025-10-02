@@ -50,11 +50,11 @@ public class Base
 			throw new Exception("Invalid Browser");
 		}
 		
-		driver.get(prop.getProperty("url")); //url open
-		driver.manage().window().maximize(); //window maximize
+		driver.get(prop.getProperty("url")); 
+		driver.manage().window().maximize(); 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
-    //itestresult - interfcae - decides whether pass of fail or skipped case
+  
 	@AfterMethod(alwaysRun=true)
 	public void driverQuit(ITestResult iTestResult) throws IOException {
 

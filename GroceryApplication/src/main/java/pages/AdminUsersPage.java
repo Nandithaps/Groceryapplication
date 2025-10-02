@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import utilities.PageUtility;
+
 public class AdminUsersPage
 {
 public WebDriver driver;
@@ -13,7 +15,7 @@ public WebDriver driver;
 	public AdminUsersPage(WebDriver driver)
 	{
 		this.driver = driver;
-		PageFactory.initElements(driver, this); // init - to initialise elements
+		PageFactory.initElements(driver, this); 
 	}
 	
 
@@ -49,14 +51,13 @@ public WebDriver driver;
 	public AdminUsersPage enterNewAdminUsersPasswordOnPaswwordField(String password)
 	{
 		newadminuserspassword.sendKeys(password);
-		return this;
-		
+		return this;	
 	}
 	
 	public AdminUsersPage selectNewAdminUsersUserType()
 	{
-		Select select = new Select(newadminusersusertype);
-		select.selectByIndex(2);    
+		PageUtility page = new PageUtility();
+		page.selectDropdownByIndex(newadminusersusertype, 2);
 		return this;
 	}
 	
@@ -80,8 +81,8 @@ public WebDriver driver;
 	
 	public AdminUsersPage selectSearchAdminUsersUserType()
 	{
-		Select select = new Select(searchadminusersusertype);
-		select.selectByIndex(2);   
+		PageUtility page = new PageUtility();
+		page.selectDropdownByIndex(searchadminusersusertype, 2);
 		return this;
 		
 	}
@@ -95,7 +96,6 @@ public WebDriver driver;
 	public AdminUsersPage clickOnResetButton()
 	{
 		reset.click();
-		//driver.navigate().refresh();
 		return this;
 	}
 	
@@ -103,10 +103,12 @@ public WebDriver driver;
 	{
 		return admininformation.isDisplayed();
 	}
+	
 	public boolean isSearchUsernameDisplayed()
 	{
 		return usernamesearch.isDisplayed();
 	}
+	
 	public boolean isResetAdminUserEnabled()
 	{
 		//System.out.println(adminuserreset.isEnabled());

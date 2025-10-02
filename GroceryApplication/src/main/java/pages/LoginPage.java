@@ -12,10 +12,10 @@ public WebDriver driver;
 	public LoginPage(WebDriver driver)
 	{
 		this.driver = driver;
-		PageFactory.initElements(driver, this); // init - to initialise elements
+		PageFactory.initElements(driver, this); 
 	}
 	
-	@FindBy(name="username") private WebElement username; // @FindBy - to find elements
+	@FindBy(name="username") private WebElement username; 
 	@FindBy(name="password") private WebElement password;
 	@FindBy(tagName = "button") private WebElement login;
 	

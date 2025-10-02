@@ -14,12 +14,12 @@ public class ScreenshotUtilitiy
 {
 	public void getScreenshot(WebDriver driver, String failedTestCase) throws IOException {
 
-		TakesScreenshot scrShot = (TakesScreenshot) driver; //TakesScreenshot - interface
-		File screenShot = scrShot.getScreenshotAs(OutputType.FILE); //store screenshot as file
+		TakesScreenshot scrShot = (TakesScreenshot) driver; 
+		File screenShot = scrShot.getScreenshotAs(OutputType.FILE); 
 
 		String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());
 
-		File f1 = new File(System.getProperty("user.dir") + "//OutputScreenShot");// create file in directory
+		File f1 = new File(System.getProperty("user.dir") + "//OutputScreenShot");
 		if (!f1.exists()) {
 
 		f1.mkdirs();
