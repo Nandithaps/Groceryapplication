@@ -19,7 +19,7 @@ public class ManageNewsTest extends Base
 	
 	
 	@Test(priority = 1,description = "User is adding New news in Manage news page")
-	public void verifyUserIsAbleToAddNewUser() throws IOException
+	public void verifyUserIsAbleToAddNewNews() throws IOException
 	{
 		String usernameValue = ExcelUtility.getStringData(0,0,"LoginPage");
 		String passwordValue = ExcelUtility.getStringData(0,1,"LoginPage");

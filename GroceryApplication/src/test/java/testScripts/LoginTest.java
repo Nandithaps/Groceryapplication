@@ -54,7 +54,7 @@ public class LoginTest extends Base
 		Assert.assertEquals(actual, expected, Constants.INVALIDPASSWORDERROR);
 	}
 	
-	@Test(groups= {"smoke"},priority = 4,description = "User login using invalid username and invalid password", dataProvider = "loginProvider")
+	@Test(groups= {"smoke"},priority = 4,description = "User login using invalid username and invalid password", dataProvider = "loginProvider") //retryAnalyzer = retry.Retry.class)
 	public void verifyUserLoginWithInvalidCredentials(String usernameValue, String passwordValue) throws IOException
 	{
 		//String usernameValue = ExcelUtility.getStringData(3,0,"LoginPage");
